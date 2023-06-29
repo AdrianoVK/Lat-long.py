@@ -5,7 +5,6 @@ from geopy.geocoders import Nominatim
 # Lê o arquivo em Excel com os nomes dos municípios
 df = pd.read_excel('Municipios_brasileiros_Mun_Falta1.xlsx')
 df.columns = ['Municipio', 'UF']
-
 # Cria uma instância do geocoder Nominatim
 geolocator = Nominatim(user_agent="my_app")
 
