@@ -14,7 +14,6 @@ def get_lat_lon(row):
         # Obtém o nome do município e a UF a partir do DataFrame
         municipio = row['Municipio']
         uf = row['UF']
-
         # Faz a consulta de geocodificação para o município e a UF
         location = geolocator.geocode(f'{municipio}, {uf}, Brasil')
 
