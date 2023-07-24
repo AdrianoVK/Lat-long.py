@@ -19,7 +19,6 @@ def get_lat_lon(row):
 
         # Imprime as informações de latitude e longitude
         print(f'{municipio}, {uf}: {location.latitude}, {location.longitude}')
-
         # Retorna a latitude e longitude
         return (location.latitude, location.longitude)
     except:
