@@ -35,10 +35,13 @@ print('Informações de latitude e longitude coletadas.')
 
 # Separa as colunas de UF e Municipio da coluna UF_Municipio
 df[['Municipio', 'UF']] = pd.DataFrame(df['UF_Municipio'].str.split(', ', 1).tolist(), index=df.index)
+
 # Divide a coluna de latitude e longitude em colunas separadas de latitude e longitude
 df[['latitude', 'longitude']] = pd.DataFrame(df['latitude_longitude'].tolist(), index=df.index)
+
 # Remove as colunas UF_Municipio e latitude_longitude
 df.drop(['UF_Municipio', 'latitude_longitude'], axis=1, inplace=True)
+
 # Salva o DataFrame com as informações de latitude e longitude em um novo arquivo em Excel
 df.to_excel('municipios_lat-long_Falta1_restante.xlsx', index=False)
 
