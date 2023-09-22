@@ -31,7 +31,6 @@ df['UF_Municipio'] = df['Municipio'] + ', ' + df['UF']
 print('Coletando informações de latitude e longitude...')
 df['latitude_longitude'] = df.apply(get_lat_lon, axis=1)
 print('Informações de latitude e longitude coletadas.')
-
 # Separa as colunas de UF e Municipio da coluna UF_Municipio
 df[['Municipio', 'UF']] = pd.DataFrame(df['UF_Municipio'].str.split(', ', 1).tolist(), index=df.index)
 
