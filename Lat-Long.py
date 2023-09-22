@@ -16,7 +16,6 @@ def get_lat_lon(row):
         uf = row['UF']
         # Faz a consulta de geocodificação para o município e a UF
         location = geolocator.geocode(f'{municipio}, {uf}, Brasil')
-
         # Imprime as informações de latitude e longitude
         print(f'{municipio}, {uf}: {location.latitude}, {location.longitude}')
         # Retorna a latitude e longitude
