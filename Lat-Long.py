@@ -9,7 +9,7 @@ df.columns = ['Municipio', 'UF']
 geolocator = Nominatim(user_agent="my_app")
 
 # Define uma função para consultar a latitude e longitude de um município
-def get_lat_lon(row):
+def get_lat_lon(row): 
     try:
         #Obtém o nome do município e a UF a partir do DataFrame
         municipio = row['Municipio']
