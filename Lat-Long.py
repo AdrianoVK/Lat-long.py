@@ -7,7 +7,7 @@ df = pd.read_excel('Municipios_brasileiros_Mun_Falta1.xlsx')
 df.columns = ['Municipio', 'UF']
 # Cria uma instância do geocoder Nominatim
 geolocator = Nominatim(user_agent="my_app")
-
+ 
 # Define uma função para consultar a latitude e longitude de um município
 def get_lat_lon(row): 
     try:
