@@ -1,5 +1,5 @@
 import pandas as pd
-from geopy.geocoders import Nominatim
+from geopy.geocoders import Nominatim 
 
 ### ESTE SCRIPT RETIRA A LATITUDE E LONGITUDE POR REFERENCIA DE MUNICIPIOS ###
 # Lê o arquivo em Excel com os nomes dos municípios   
